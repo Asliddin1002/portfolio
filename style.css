@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.con{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 2fr 15fr 6fr    ;
+    width: 100%;
+    height: 100vh;
+}
+.menu{
+    background-color: aqua;
+    grid-row: 1/6;
+}
+.header{
+    background-color: rebeccapurple;
+}
+.siober{
+    background-color: red;
+}
+.conta1{
+    background-color: blue;
+}
+.conta2{
+    background-color: rgb(64, 64, 226);
+}
+.conta3{
+    background-color: rgb(118, 118, 214);
+}
+.footer{
+    background-color: chartreuse;
+    grid-column: 1/-1;
+}
+.con nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-row: 3/-1; */
+}
+@media only screen and (max-width: 560px) {
+    .con{
+        display: grid;
+        grid-template-rows: 1fr 2fr 5fr 2fr 0.5fr;
+        width: 100%;
+        height: 100vh;
+    }
+    .menu{
+        background-color: aqua;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+    .header{
+        background-color: rebeccapurple;
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    .siober{
+        background-color: red;
+        grid-column: 1/-1;
+    }
+    .conta1{
+        background-color: blue;
+        grid-column: 1/-1;
+    }
+    .conta2{
+        background-color: rgb(64, 64, 226);
+        grid-column: 1/-1;
+    }
+    .conta3{
+        background-color: rgb(118, 118, 214);
+        grid-column: 1/-1;
+    }
+    .footer{
+        background-color: chartreuse;
+        grid-column: 1/-1;
+    }
+    .con nav{
+        display: grid;
+        grid-column: 1/-1;
+    }
+   
+}
